@@ -1,0 +1,87 @@
+
+
+
+body {
+        background-color: lightgrey;
+        font-family: Helvetica;
+    }
+    
+h1 {
+	text-align: center;
+	font-size: 2em;
+}
+
+
+section > div {
+	border: 2px solid black;
+	background-color: aquamarine;
+	margin: 10px;
+}
+
+
+
+
+
+.title {
+    float: right;
+    text-align: center;
+	border: 1px solid;
+	font-size: 1.3em;
+	width: 30%;
+	padding:0% 5%;
+	
+}
+
+p {
+	margin: 5px;
+	clear: both;
+	
+}
+
+#first > div .title{
+    background-color: bisque;
+}
+
+#second > div .title{
+    background-color: skyblue;
+}
+
+#third > div .title{
+    background-color: indianred;
+}
+
+
+/* large */
+@media only screen and (min-width: 992px) {
+	#first, #second, #third {
+		display: inline-block;
+		width: 33%;
+      
+	} 
+}
+
+/*medium*/
+@media only screen and (min-width:768px) and (max-width: 991px) {
+	#first, #second, #third {
+		display: inline-block;
+	} 
+
+	#first, #second {
+		width: 50%;
+        
+	}
+
+	#third {
+		width: 100%;
+	}
+
+}
+
+/*small*/
+@media only screen and (max-width: 767px) {
+	#first, #second, #third {
+		display: inline-block;
+		width: 100%;
+	} 
+
+}
